@@ -83,7 +83,7 @@ controller:
   ##
   scope:
     enabled: false
-    namespace: "pipeline-ns" # defaults to .Release.Namespace
+    namespace: "" # defaults to .Release.Namespace
 
   ## Allows customization of the configmap / nginx-configmap namespace
   ##

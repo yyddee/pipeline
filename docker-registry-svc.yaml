@@ -3,19 +3,19 @@ kind: Service
 metadata:
   labels:
     app: docker-registry
-  name: registry-svc
-  namespace: pipeline-ns
+  name: docker-registry-svc
+  namespace: pipeline
 spec:
   type: NodePort
   selector:
     app: docker-registry
     release: docker-registry
   ports:
-    - name: registry-http
+    - name: docker-registry-http
       port: 80
       protocol: TCP
       targetPort: 5000
-    - name: registry-https
+    - name: docker-registry-https
       port: 443
       protocol: TCP
       targetPort: 5000
